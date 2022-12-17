@@ -18,7 +18,7 @@ public class HelloController {
         return "ok";
     }
 
-    @GetMapping("/hello-v2")
+    @GetMapping("/hello-v2") //String -> Integer 테스트
     public String helloV2(@RequestParam Integer data) {
         System.out.println("data = " + data);
         return "v2 ok";
